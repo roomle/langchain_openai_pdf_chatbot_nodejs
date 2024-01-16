@@ -21,6 +21,12 @@ npm run adddocs <path>
 
 The database is created in "data/vectorstore.usql".
 
+## Start the chatbot server
+
+```none
+npm run start
+```
+
 ## Resources
 
 - [LLMs OpenAI](https://js.langchain.com/docs/integrations/llms/openai)

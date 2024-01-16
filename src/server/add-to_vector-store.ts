@@ -62,5 +62,4 @@ const addDocumentsToVectorStore = async (directory: string) => {
   await addToHnswVectorStore(splitDocs, embeddings);
 };
 
-// eslint-disable-next-line @typescript-eslint/no-floating-promises
-addDocumentsToVectorStore(documentDirectory);
+void addDocumentsToVectorStore(documentDirectory);
