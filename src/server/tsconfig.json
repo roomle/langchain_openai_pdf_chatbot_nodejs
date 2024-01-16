@@ -4,6 +4,7 @@
     "module": "commonjs",
     "outDir": "../../dist/server",
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "strict": true,
     "declaration": true,
     "noImplicitAny": true,
