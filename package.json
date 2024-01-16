@@ -10,7 +10,9 @@
     "format": "prettier . --write --ignore-path .prettierignore && npx eslint ./src/** --fix",
     "update:modules": "ncu -u && npm update && npm i",
     "adddocs": "node ./dist/server/add-to_vector-store.js",
-    "start": "node ./dist/server/app.js"
+    "start": "node ./dist/server/app.js",
+    "dev": "nodemon ./dist/server/app.js",
+    "watch": "concurrently \"npm run build -- --watch\" \"nodemon --watch ./dist/ --exec npm run dev\""
   },
   "author": "Rabbid76",
   "license": "MIT",
@@ -29,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
     "copyfiles": "^2.4.1",
+    "concurrently": "^8.2.2",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jest": "27.6.3",

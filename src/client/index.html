@@ -17,11 +17,37 @@
         padding: 0px;
         font-family: sans-serif;
       }
+      #chatDiv {
+        width: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: left;
+        margin-left: 10%;
+      }
+      .inputField {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        float: left;
+        width: 90%;
+        background-color: #f0f0f0;
+        font-size: large;
+        border-color: darkblue;
+        border-radius: 10px;
+      }
+      .responseField {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        float: right;
+        width: 90%;
+        background-color: #f0f0f0;
+        font-size: large;
+        border-color: darkmagenta;
+        border-radius: 10px;
+      }
     </style>
   </head>
 
   <body>
-    <label>LangChain OpenAI Chatbot for PDFs</label>
+    <div id="chatDiv"></div>
     <script type="module" src="index.js"></script>
   </body>
 </html>
