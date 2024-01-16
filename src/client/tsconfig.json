@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "../../dist/client",
+        "moduleResolution": "node",
+        "strict": true
+    },
+    "include": ["**/*.ts"]
+}
