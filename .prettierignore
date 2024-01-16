@@ -1,0 +1,8 @@
+.devcontainer
+.vscode
+dist
+node_modules
+patches
+resource
+submodules
+package-lock.json
